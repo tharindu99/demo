@@ -1,0 +1,9 @@
+<mat-card>
+  <lib-news-banner></lib-news-banner>
+  <span class="space"></span>
+  <lib-search-bar></lib-search-bar>
+  <lib-product-list
+    [productList]="productList"
+    (itemToCart)="addItemToCart($event)"
+  ></lib-product-list>
+</mat-card>

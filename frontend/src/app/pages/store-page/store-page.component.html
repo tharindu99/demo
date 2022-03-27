@@ -1,0 +1,7 @@
+<lib-header [title]="pageHeaderTitle"></lib-header>
+<section id="products-section">
+  <app-products-section (cartChanged)="updateCartStatus($event)"></app-products-section>
+</section>
+<section id="cart-section">
+  <app-shopping-cart [(cartChanged)]="cartChanged"></app-shopping-cart>
+</section>

@@ -1,0 +1,6 @@
+<mat-card>
+    <lib-cart-header></lib-cart-header>
+    <lib-cart-item-list [dataSource]="dataSource"></lib-cart-item-list>
+    <span class="space"></span>
+    <lib-cart-footer (emptyCartAction)="emptyCartAction($event)"></lib-cart-footer>
+</mat-card>
