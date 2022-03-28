@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  api-gateway:
+    image: demo/api-gateway
+    build: ../backend/api-gateway/
+    ports:
+      - "9191:9191"
+
+  service-registry:
+    image: demo/service-registry
+    build: ../backend/service-registry/
+    ports:
+      - "8761:8761"
+
+  cart-service:
+    image: demo/cart-service
+    build: ../backend/cart-service/
+    ports:
+      - "9002:9002"
+
+  product-service:
+    image: demo/product-service
+    build: ../backend/product-service/
+    ports:
+      - "9001:9001"
+    depends_on:
+      - service-registry
+      - api-gateway
+
+      
+
