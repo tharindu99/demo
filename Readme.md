@@ -10,10 +10,10 @@ mvn clean install
 ## run the application backend
 
 You can up the backend with following steps  
-    cd  service-registry && mvnw spring-boot:run
-    cd  api-gateway && mvnw spring-boot:run
-    cd  product-service && mvnw spring-boot:run
-    cd  cart-service && mvnw spring-boot:run
+    cd  backend\service-registry && mvnw spring-boot:run
+    cd  backend\api-gateway && mvnw spring-boot:run
+    cd  backend\product-service && mvnw spring-boot:run
+    cd  backend\cart-service && mvnw spring-boot:run
 
 For investigations and troubleshoot, you can use [Zipkin server](https://zipkin.io/pages/quickstart.html)
 just download the jar file and run the following command 
